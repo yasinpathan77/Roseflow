@@ -1,0 +1,42 @@
+ID,Name,Parent Category,Commission Rate,Status
+1,Atta Whole Wheat Sooji,Parent,20%,Active
+2,Maida & Besan ,Parent,20%,Active
+3,Rice & Other Flours,Parent,20%,Active
+4,Raw Rice,Parent,20%,Active
+5,"Poha, Sabudana & Murmura",Parent,20%,Active
+6,Basmati Rice,Parent,20%,Active
+7,Boiled & Steam Rice,Parent,20%,Active
+8,"Toor, Channa & Moong Dal",Parent,20%,Active
+9,Cereals & Millets,Parent,20%,Active
+10,Urad & Other Dals,Parent,20%,Active
+11,Organic Dry Fruits,Parent,20%,Active
+12,Organic Dals & Pulses,Parent,20%,Active
+13,Organic Millet & Flours,Parent,20%,Active
+14,"Organic Sugar, Jaggery",Parent,20%,Active
+15,Organic Masalas & Spices,Parent,20%,Active
+16,"Organic Rice, Other Rice",Parent,20%,Active
+17,Organic Flours,Parent,20%,Active
+18,"Organic Edible Oil, Ghee",Parent,20%,Active
+19,Blended Cooking Oils,Parent,20%,Active
+20,"Sunflower, Rice Bran Oil",Parent,20%,Active
+21,Soya & Mustard Oils,Parent,20%,Active
+22,Ghee & Vanaspati,Parent,20%,Active
+23,Gingelly Oil,Parent,20%,Active
+24,Groundnut Oil,Parent,20%,Active
+25,Cooking Coconut Oil,Parent,20%,Active
+26,Olive & Canola Oils,Parent,20%,Active
+27,Other Edible Oils,Parent,20%,Active
+28,Cold Pressed Oil,Parent,20%,Active
+29,Sugar & Jaggery,Parent,20%,Active
+30,Salts,Parent,20%,Active
+31,Sugarfree Sweeteners,Parent,20%,Active
+32,Whole Spices,Parent,20%,Active
+33,Powdered Spices,Parent,20%,Active
+34,Cooking Pastes,Parent,20%,Active
+35,Herbs & Seasoning,Parent,20%,Active
+36,Blended Masalas,Parent,20%,Active
+37,Almonds,Parent,20%,Active
+38,Cashews,Parent,20%,Active
+39,Raisins,Parent,20%,Active
+40,Mukhwas,Parent,20%,Active
+41,Other Dry Fruits,Parent,20%,Active
