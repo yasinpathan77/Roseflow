@@ -18,7 +18,7 @@ class EmailVerificationController extends Controller
     use SendMail;
     public function __construct()
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
     }
     public function emailVerify(Request $request){
         $verify_code = \Illuminate\Support\Facades\Request::get('code');

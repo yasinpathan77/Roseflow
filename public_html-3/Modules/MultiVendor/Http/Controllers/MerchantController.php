@@ -34,7 +34,7 @@ class MerchantController extends Controller
 
     public function __construct(MerchantService $merchantService, ProfileService $profileService ,RefundRepository $refundRepository ,OrderManageService $ordermanageService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->merchantService = $merchantService;
         $this->profileService = $profileService;
         $this->refundRepository = $refundRepository;

@@ -17,7 +17,7 @@ class AboutUsController extends Controller
 
     public function __construct(AboutUsService $aboutusService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->aboutusService = $aboutusService;
     }
     public function index()

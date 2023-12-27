@@ -18,7 +18,7 @@ class ContactController extends Controller
     public function __construct(ContactService $contactService)
     {
         $this->contactService = $contactService;
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
     }
     public function index()
     {

@@ -19,7 +19,7 @@ class BrandController extends Controller
 
     public function __construct(BrandService $brandService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->brandService = $brandService;
     }
 

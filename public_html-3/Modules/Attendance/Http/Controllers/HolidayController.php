@@ -18,7 +18,7 @@ class HolidayController extends Controller
     public function __construct(HolidayRepositoryInterface $holidayRepository)
     {
         $this->holidayRepository = $holidayRepository;
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
 
         $this->middleware('prohibited_demo_mode')->only('store');
     }

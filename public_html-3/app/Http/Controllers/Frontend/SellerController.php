@@ -17,7 +17,7 @@ class SellerController extends Controller
     public function __construct(SellerService $sellerService)
     {
         $this->sellerService = $sellerService;
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
     }
 
     public function index($seller_slug)

@@ -39,7 +39,7 @@ class WelcomeController extends Controller
     public function __construct(SubscriptionService $subscribe)
     {
         $this->subscribe = $subscribe;
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
     }
     public function index(Request $request)
     {
@@ -59,7 +59,7 @@ class WelcomeController extends Controller
                 VisitorHistory::create(['visitors' => request()->ip(), 'date' => Carbon::now()->format('y-m-d'), 'agent' => Browser::browserFamily() . '-' . Browser::browserVersion() . '-' . Browser::browserEngine() . '-' . Browser::platformName(), 'device' => Browser::platformName(), 'location' => $location]);
             }
             // $CategoryList = Category::where('parent_id', 0)->get();
-            $CategoryList = collect();
+            //$CategoryList = collect();
 
             $widgets = HomePageSection::all();
             $previous_route = session()->get('previous_user_last_route');
@@ -69,7 +69,7 @@ class WelcomeController extends Controller
                 session()->forget('previous_user_last_route');
                 return redirect($previous_route);
             } else {
-                return view(theme('welcome'), compact('CategoryList', 'widgets'));
+                return view(theme('welcome'), compact('widgets'));
             }
         } catch (Exception $e) {
             LogActivity::errorLog($e->getMessage());

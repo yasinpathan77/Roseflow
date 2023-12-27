@@ -16,7 +16,7 @@ class WithdrawRequestController extends Controller
 
     public function __construct(WithdrawRequestService  $walletRequestService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->walletRequestService = $walletRequestService;
     }
 

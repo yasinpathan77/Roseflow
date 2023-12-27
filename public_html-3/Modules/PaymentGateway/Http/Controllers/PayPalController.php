@@ -23,7 +23,7 @@ class PayPalController extends Controller
 
     public function __construct()
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
 
         $this->payPalGateway = Omnipay::create('PayPal_Rest');
         $credential = $this->getCredential();

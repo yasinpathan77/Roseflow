@@ -19,7 +19,7 @@ class HeaderController extends Controller
     public function __construct(HeaderService $headerService)
     {
         $this->headerService = $headerService;
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
     }
 
     public function index()

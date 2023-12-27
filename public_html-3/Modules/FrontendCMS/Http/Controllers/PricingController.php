@@ -19,7 +19,7 @@ class PricingController extends Controller
 
     public function __construct(PricingService $pricingService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->middleware('prohibited_demo_mode')->only('store');
         $this->pricingService = $pricingService;
     }

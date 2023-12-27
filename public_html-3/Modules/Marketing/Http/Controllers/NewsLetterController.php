@@ -20,7 +20,7 @@ class NewsLetterController extends Controller
 
     public function __construct(NewsLetterService $newsLetterService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->newsLetterService = $newsLetterService;
     }
 

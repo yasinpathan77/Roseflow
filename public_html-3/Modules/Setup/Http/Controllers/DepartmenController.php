@@ -15,7 +15,7 @@ class DepartmenController extends Controller
 
     public function __construct(DepartmentRepository $departmentRepository)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->departmentRepository = $departmentRepository;
     }
 

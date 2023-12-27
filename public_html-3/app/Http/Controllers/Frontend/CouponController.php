@@ -16,7 +16,7 @@ class CouponController extends Controller
     public function __construct(CouponService $couponService)
     {
         $this->couponService = $couponService;
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
     }
     public function index(){
         try{

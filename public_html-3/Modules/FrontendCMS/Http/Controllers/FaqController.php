@@ -18,7 +18,7 @@ class FaqController extends Controller
 
     public function __construct(FaqService $faqService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->faqService = $faqService;
     }
 

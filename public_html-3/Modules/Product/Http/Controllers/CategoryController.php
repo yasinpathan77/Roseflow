@@ -26,7 +26,7 @@ class CategoryController extends Controller
 
     public function __construct(CategoryService $categoryService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->middleware('prohibited_demo_mode')->only('store');
         $this->categoryService = $categoryService;
     }

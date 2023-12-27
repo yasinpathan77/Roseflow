@@ -17,7 +17,7 @@ class UserNotificationSettingController extends Controller
 
     public function __construct(UserNotificationSettingService $userNotificationSettingService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->userNotificationSettingService = $userNotificationSettingService;
     }
 

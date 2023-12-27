@@ -34,7 +34,7 @@ class BlogPostController extends Controller
     public function __construct(BlogPostService $blogPostService)
     {
         $this->blogPostService = $blogPostService;
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->middleware('prohibited_demo_mode')->only('store','update','destroy');
     }
 

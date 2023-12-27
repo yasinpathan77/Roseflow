@@ -19,7 +19,7 @@ class SubSellerController extends Controller
     protected $subSellerService;
     public function __construct(SubSellerService $subSellerService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->subSellerService = $subSellerService;
     }
 

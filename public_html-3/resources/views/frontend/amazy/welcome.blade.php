@@ -23,6 +23,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="section__title d-flex align-items-center gap-3 mb_30 flex-wrap">
+                <h1>Elevate Your Culinary Experience with Roseflo's Finest Flours | Rosegold Fresh Atta, Sooji, Maida</h1>
                     <h3 id="best_deals_title" class="m-0 flex-fill">{{$best_deal->title}}</h3>
                     <a href="{{route('frontend.category-product',['slug' =>  ($best_deal->section_name), 'item' =>'product'])}}" class="title_link d-flex align-items-center lh-1">
                         <span class="title_text">{{ __('common.view_all') }}</span>

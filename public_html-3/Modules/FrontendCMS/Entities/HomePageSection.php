@@ -60,7 +60,11 @@ class HomePageSection extends Model
         //     })->where('status', 1);
         // });
 
-        $categories = Category::with(['sellerProducts.product', 'sellerProducts.seller'])->whereHas('sellerProducts');
+        $categories = Category::with(['sellerProducts.product' => function ($query) {
+                                                        $query->select('id','thumbnail_image_source');
+                                                    }, 'sellerProducts.seller'  => function ($query) {
+                                                        $query->select('id');
+                                                    }])->whereHas('sellerProducts');
         if ($this->type == 1) {
             $categories = $categories->orderByDesc('total_sale');
         }
@@ -85,8 +89,7 @@ class HomePageSection extends Model
         if(app('theme')->folder_path == 'amazy'){
             $paginate = 6;
         }
-        return $categories = $categories->take($paginate)->get();
-
+        return  $categories->take($paginate)->get();
         
     }
 
@@ -120,7 +123,7 @@ class HomePageSection extends Model
         }
         $paginate = 12;
         if(app('theme')->folder_path == 'amazy'){
-            $paginate = 10;
+            $paginate = 12;
         }
         return $brands->distinct('brands.id')->take($paginate)->get();
     }

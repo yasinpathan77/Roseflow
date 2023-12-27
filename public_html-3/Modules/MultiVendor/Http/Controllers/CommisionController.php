@@ -15,7 +15,7 @@ class CommisionController extends Controller
     protected $commisionService;
     public function __construct(CommisionService $commisionService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->commisionService = $commisionService;
     }
 

@@ -19,7 +19,7 @@ class SettingController extends Controller
 
     public function __construct(SettingService $seller)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->seller = $seller;
     }
 

@@ -17,7 +17,7 @@ class SubcribeContentController extends Controller
     protected $subscribeContentService;
 
     public function __construct(SubcribeContentService $subscribeContentService){
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->subscribeContentService = $subscribeContentService;
     }
 

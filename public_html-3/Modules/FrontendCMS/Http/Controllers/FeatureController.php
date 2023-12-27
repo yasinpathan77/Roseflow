@@ -18,7 +18,7 @@ class FeatureController extends Controller
 
     public function __construct(FeatureService $featureService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->featureService = $featureService;
     }
 

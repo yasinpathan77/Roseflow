@@ -17,7 +17,7 @@ class StateController extends Controller
 
     public function __construct(StateService $stateService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->stateService = $stateService;
     }
     

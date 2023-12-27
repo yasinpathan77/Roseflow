@@ -21,7 +21,7 @@ class SearchKeywordController extends Controller
     public function __construct(SearchKeywordService $searchKeywordService)
     {
         $this->searchKeywordService = $searchKeywordService;
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
     }
 
 

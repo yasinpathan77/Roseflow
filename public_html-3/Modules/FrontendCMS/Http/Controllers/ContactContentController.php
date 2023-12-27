@@ -20,7 +20,7 @@ class ContactContentController extends Controller
 
     public function __construct(ContactContentService $contactContentService, QueryService $queryService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->contactContentService = $contactContentService;
         $this->queryService = $queryService;
     }

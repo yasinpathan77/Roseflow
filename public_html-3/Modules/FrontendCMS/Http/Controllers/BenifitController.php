@@ -18,7 +18,7 @@ class BenifitController extends Controller
 
     public function __construct(BenefitService $benefitService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->benefitService = $benefitService;
     }
 

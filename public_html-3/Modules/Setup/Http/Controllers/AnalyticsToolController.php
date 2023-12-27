@@ -17,7 +17,7 @@ class AnalyticsToolController extends Controller
 
     public function __construct(AnalyticsService $analyticsService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->analyticsService = $analyticsService;
     }
 

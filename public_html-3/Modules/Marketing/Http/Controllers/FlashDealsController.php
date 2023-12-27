@@ -19,7 +19,7 @@ class FlashDealsController extends Controller
 
     public function __construct(FlashDealsService $flashDealsService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->flashDealsService = $flashDealsService;
     }
     

@@ -14,7 +14,7 @@ class PaymentGatewaySettingController extends Controller
 
     public function __construct(PaymentGatewayService  $paymentGatewayService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->paymentGatewayService = $paymentGatewayService;
     }
 

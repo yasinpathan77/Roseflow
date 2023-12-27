@@ -19,7 +19,7 @@ class CartController extends Controller
     public function __construct(CartService $cartService)
     {
         $this->cartService = $cartService;
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
 
     }
 

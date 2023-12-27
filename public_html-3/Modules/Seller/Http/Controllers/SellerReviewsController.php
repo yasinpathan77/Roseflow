@@ -13,7 +13,7 @@ class SellerReviewsController extends Controller
     protected $sellerReviewService;
     public function __construct(SellerReviewService $sellerReviewService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->sellerReviewService = $sellerReviewService;
     }
     

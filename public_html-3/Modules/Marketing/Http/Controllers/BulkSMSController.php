@@ -20,7 +20,7 @@ class BulkSMSController extends Controller
 
     public function __construct(NewsLetterService $newsLetterService, BulkSMSService $bulkSMSService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->newsLetterService = $newsLetterService;
         $this->bulkSMSService = $bulkSMSService;
     }

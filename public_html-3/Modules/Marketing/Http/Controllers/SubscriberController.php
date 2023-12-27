@@ -16,7 +16,7 @@ class SubscriberController extends Controller
     protected $subscriberService;
     public function __construct(SubscriberService $subscriberService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->subscriberService = $subscriberService;
     }
     public function index()

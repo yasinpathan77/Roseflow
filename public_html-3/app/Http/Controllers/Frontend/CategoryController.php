@@ -32,7 +32,7 @@ class CategoryController extends Controller
     public function __construct(FilterService $filterService)
     {
         $this->filterService = $filterService;
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
     }
     public function index()
     {

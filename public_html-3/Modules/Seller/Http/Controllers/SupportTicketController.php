@@ -22,7 +22,7 @@ class SupportTicketController extends Controller
 
     public function __construct(SupportTicketService $supportTicketService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->supportTicketService = $supportTicketService;
     }
 

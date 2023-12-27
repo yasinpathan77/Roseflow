@@ -17,7 +17,7 @@ class TagController extends Controller
 
     public function __construct(TagService $tagService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->tagService = $tagService;
     }
 

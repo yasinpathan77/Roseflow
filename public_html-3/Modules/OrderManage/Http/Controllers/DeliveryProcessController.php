@@ -14,7 +14,7 @@ class DeliveryProcessController extends Controller
     protected $deliveryProcessService;
 
     public function __construct(DeliveryProcessService $deliveryProcessService){
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->deliveryProcessService = $deliveryProcessService;
     }
 

@@ -18,7 +18,7 @@ class WorkingProcessController extends Controller
 
     public function __construct(WorkingProcessService $workingProcessService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->workingProcessService = $workingProcessService;
     }
 

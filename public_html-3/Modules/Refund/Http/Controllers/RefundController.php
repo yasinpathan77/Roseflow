@@ -22,7 +22,7 @@ class RefundController extends Controller
 
     public function __construct(RefundService $refundService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->refundService = $refundService;
     }
 

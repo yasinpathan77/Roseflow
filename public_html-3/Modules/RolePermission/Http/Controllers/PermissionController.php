@@ -17,7 +17,7 @@ class PermissionController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->middleware('prohibited_demo_mode')->only('store');
     }
 

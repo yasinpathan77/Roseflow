@@ -22,7 +22,7 @@ class ThemeController extends Controller
     public function __construct(ThemeService $themeService)
     {
         $this->themeService = $themeService;
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
     }
 
     public function index()

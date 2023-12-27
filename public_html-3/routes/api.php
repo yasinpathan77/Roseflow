@@ -138,6 +138,7 @@ Route::middleware('auth:sanctum')->group(function () {
    Route::get('/homepage-data', [HomepageController::class,'index']);
 
    Route::get('/category-list', [CategoryController::class,'index']);
+   Route::get('/test', [CategoryController::class,'test']);
 
 // search api
 Route::post('/live-search', [SearchController::class,'liveSearch']);

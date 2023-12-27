@@ -13,7 +13,7 @@ class TicketPriorityController extends Controller
 
     public function __construct(TicketPriorityService $ticketPriorityService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->ticketPriorityService = $ticketPriorityService;
     }
     public function index()

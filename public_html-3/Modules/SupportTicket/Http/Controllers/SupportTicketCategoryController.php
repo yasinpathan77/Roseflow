@@ -14,7 +14,7 @@ class SupportTicketCategoryController extends Controller
 
     public function __construct(SupportTicketCategoryService $supportTicketCategoryService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->supportTicketCategoryService = $supportTicketCategoryService;
     }
     public function index()

@@ -16,7 +16,7 @@ class ReferralCodeController extends Controller
     protected $referralCodeService;
     public function __construct(ReferralCodeService $referralCodeService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->referralCodeService = $referralCodeService;
     }
     

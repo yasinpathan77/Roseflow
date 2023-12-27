@@ -77,7 +77,7 @@ class MerchantRegisterController extends Controller
         PricingService $pricingService,
         QueryService $queryService
     ) {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->middleware(['prohibited_demo_mode'])->only('register');
         $this->merchantContentService = $merchantContentService;
         $this->benefitService = $benefitService;

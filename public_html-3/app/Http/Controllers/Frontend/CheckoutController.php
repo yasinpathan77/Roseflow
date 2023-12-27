@@ -35,7 +35,7 @@ class CheckoutController extends Controller
     {
         $this->checkoutService = $checkoutService;
         $this->paymentGatewayService = $paymentGatewayService;
-        // $this->middleware('maintenance_mode');
+        // // $this->middleware('maintenance_mode');
 
     }
 

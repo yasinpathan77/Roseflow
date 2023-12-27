@@ -14,7 +14,7 @@ class FlashDealController extends Controller
     public function __construct(FlashDealService $flashDealService)
     {
         $this->flashDealService = $flashDealService;
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
     }
 
     public function show($slug){

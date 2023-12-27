@@ -17,7 +17,7 @@ class GiftCardController extends Controller
     public function __construct(GiftCardService $giftCardService)
     {
         $this->giftCardService = $giftCardService;
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
     }
 
     public function index()

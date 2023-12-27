@@ -17,7 +17,7 @@ class UtilitiesController extends Controller
     protected $utilitiesRepository;
     public function __construct(UtilitiesRepository $utilitiesRepository)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->utilitiesRepository = $utilitiesRepository;
     }
 

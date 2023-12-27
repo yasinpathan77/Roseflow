@@ -21,7 +21,7 @@ class BlogCategoryController extends Controller
     public function __construct(BlogCategoryService $blogCategoryService)
     {
         $this->blogCategoryService = $blogCategoryService;
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->middleware('prohibited_demo_mode')->only('store','update','destroy');
     }
 

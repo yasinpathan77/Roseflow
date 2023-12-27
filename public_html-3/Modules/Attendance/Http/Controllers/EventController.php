@@ -21,7 +21,7 @@ class EventController extends Controller
     {
         $this->eventRepository = $eventRepository;
         $this->roleRepository = $roleRepository;
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->middleware('prohibited_demo_mode')->only('store','update','destroy');
     }
 

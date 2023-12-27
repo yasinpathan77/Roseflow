@@ -16,7 +16,7 @@ class CompareController extends Controller
     public function __construct(CompareService $compareService)
     {
         $this->compareService = $compareService;
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
     }
 
     public function index(){

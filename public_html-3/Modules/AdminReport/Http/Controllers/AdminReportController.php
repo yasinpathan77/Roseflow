@@ -18,7 +18,7 @@ class AdminReportController extends Controller
     public function __construct(AdminReportService $adminReportService)
     {
         $this->adminReportService = $adminReportService;
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
     }
 
     public function visitor_index()

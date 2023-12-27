@@ -14,7 +14,7 @@ class RefundReasonController extends Controller
     protected $refundReasonService;
 
     public function __construct(RefundReasonService $refundReasonService){
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->refundReasonService = $refundReasonService;
     }
 

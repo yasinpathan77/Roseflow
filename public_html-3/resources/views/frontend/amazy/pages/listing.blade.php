@@ -38,8 +38,13 @@
     </div>
 </div>
 <!-- brand_banner::end  -->
+
+
 <div class="prodcuts_area ">
     <div class="container">
+        @if(request()->is('*category/atta*'))
+            <h1>Crafting Culinary Perfection with Chakki Atta, Sooji, Rava, Maida, and Besan.</h1><br/>
+        @endif
         <div class="row">
             @include('frontend.amazy.partials._listing_sidebar')
 

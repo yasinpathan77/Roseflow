@@ -12,7 +12,7 @@ class BlogController extends Controller
 
     public function __construct()
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
     }
 
     public function index(){

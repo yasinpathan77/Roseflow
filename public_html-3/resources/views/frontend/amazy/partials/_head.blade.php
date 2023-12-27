@@ -2,7 +2,17 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>@if(trim($__env->yieldContent('title'))) @yield('title') | {{app('general_setting')->meta_site_title}} @else {{app('general_setting')->meta_site_title}} @endif</title>
+    @section('title', 'Premium Chakki Atta, Sooji, Besan, RoseGold Products')
+    @if(request()->is('*category/atta*'))
+        <title>Roseflo Flours: Unveiling the Finest Chakki Atta, Sooji, Rava, Maida, and Besan.</title>
+        <meta name="description" content="Explore the essence of quality with Roseflo's diverse flour range. From wholesome Chakki Atta to versatile Maida and nutritious Besan, discover the perfect ingredient for every culinary creation.">
+        <meta name="keywords" content="Roseflo Flours, Chakki Atta, Sooji, Rava, Maida, Besan, Quality Ingredients, Premium Cooking Essentials.">
+    @else
+        <title>@if(trim($__env->yieldContent('title'))) {{app('general_setting')->meta_site_title}} | @yield('title') @else {{app('general_setting')->meta_site_title}} @endif</title>
+        <meta name="description" content="Indulge in luxury with RoseGold, a premium collection by Roseflo. Explore our range of finest Chakki Atta, Sooji, Rava, Maida, and Besan. Elevate your culinary experience with the essence of perfection.">
+        <meta name="keywords" content="RoseGold, Chakki Atta, Sooji, Rava, Maida, Besan, Premium Flour, Luxury Cooking, Roseflo RoseGold.">
+    @endif
+
     <meta name="_token" content="@php echo csrf_token(); @endphp" />
     @section('share_meta')
         @show

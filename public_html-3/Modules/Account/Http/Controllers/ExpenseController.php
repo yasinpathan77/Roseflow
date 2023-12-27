@@ -31,7 +31,7 @@ class ExpenseController extends Controller
     ) {
         $this->transactionService = $transactionService;
         $this->request = $request;
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->middleware('prohibited_demo_mode')->only('store', 'update', 'destroy');
     }
 

@@ -22,7 +22,7 @@ class ContactUsController extends Controller
     {
         $this->contactContentService = $contactContentService;
         $this->queryService = $queryService;
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
     }
 
     public function index(){

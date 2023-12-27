@@ -29,7 +29,7 @@ class ProductController extends Controller
     protected $productService;
     public function __construct(ProductService $productService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->productService = $productService;
     }
 

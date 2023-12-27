@@ -16,7 +16,7 @@ class CountryController extends Controller
 
     public function __construct(CountryService $countryService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->countryService = $countryService;
     }
     

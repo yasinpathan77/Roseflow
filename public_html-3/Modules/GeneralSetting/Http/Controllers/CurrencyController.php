@@ -13,7 +13,7 @@ class CurrencyController extends Controller
 
     public function __construct(CurrencyService $currencyService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->currencyService = $currencyService;
     }
 

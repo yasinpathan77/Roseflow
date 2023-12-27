@@ -21,7 +21,7 @@ class BlogController extends Controller
     public function __construct(BlogService $blogService)
     {
         $this->blogService = $blogService;
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
     }
     /**
      * Display a listing of the resource.

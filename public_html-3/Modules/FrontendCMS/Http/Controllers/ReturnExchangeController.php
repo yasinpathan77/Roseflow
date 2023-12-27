@@ -16,7 +16,7 @@ class ReturnExchangeController extends Controller
 
     public function __construct(ReturnExchangeService $returnService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->returnService = $returnService;
     }
     public function index()

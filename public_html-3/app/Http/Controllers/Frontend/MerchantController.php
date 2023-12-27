@@ -26,7 +26,7 @@ class MerchantController extends Controller
     public function __construct(MerchantContentService $merchantContentService, BenefitService $benefitService,
      WorkingProcessService $workingProcessService, FaqService $faqService, PricingService $pricingService, QueryService $queryService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         
         $this->merchantContentService = $merchantContentService;
         $this->benefitService = $benefitService;

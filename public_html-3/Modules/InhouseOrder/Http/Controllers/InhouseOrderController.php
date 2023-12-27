@@ -24,7 +24,7 @@ class InhouseOrderController extends Controller
     protected $inhouseOrderService;
     public function __construct(InhouseOrderService $inhouseOrderService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->inhouseOrderService = $inhouseOrderService;
     }
 

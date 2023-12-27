@@ -11,7 +11,7 @@ class SetupController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
     }
     /**
      * Display a listing of the resource.

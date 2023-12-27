@@ -34,7 +34,7 @@ class BankAccountController extends Controller
     {
         $this->bankAccountService = $bankAccountService;
         $this->request = $request;
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->middleware('prohibited_demo_mode')->only('store','update','destroy');
     }
 

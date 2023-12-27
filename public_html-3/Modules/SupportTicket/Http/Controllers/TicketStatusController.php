@@ -13,7 +13,7 @@ class TicketStatusController extends Controller
 
     public function __construct(TicketStatusService $ticketStatusService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->ticketStatusService = $ticketStatusService;
     }
 

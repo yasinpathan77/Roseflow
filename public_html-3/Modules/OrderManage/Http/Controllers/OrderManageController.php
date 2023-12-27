@@ -24,7 +24,7 @@ class OrderManageController extends Controller
 
     public function __construct(OrderManageService $ordermanageService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->ordermanageService = $ordermanageService;
     }
 

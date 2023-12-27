@@ -17,7 +17,7 @@ class CityController extends Controller
 
     public function __construct(CityService $cityService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->cityService = $cityService;
     }
     

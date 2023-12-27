@@ -21,7 +21,7 @@ class ColorController extends Controller
     public function __construct(ColorService $colorService)
     {
         $this->colorService = $colorService;
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->middleware('prohibited_demo_mode')->only('store','update');
     }
 

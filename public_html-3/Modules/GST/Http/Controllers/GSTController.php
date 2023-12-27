@@ -15,7 +15,7 @@ class GSTController extends Controller
 
     public function __construct(GSTService $gstService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->gstService = $gstService;
     }
     

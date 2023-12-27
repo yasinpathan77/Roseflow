@@ -18,7 +18,7 @@ class DynamicPageController extends Controller
 
     public function __construct(DynamicPageService $dynamicPageService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->dynamicPageService = $dynamicPageService;
     }
     public function index()

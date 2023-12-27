@@ -25,7 +25,7 @@ class ReportController extends Controller
     {
         $this->reportService = $reportService;
         $this->request = $request;
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
     }
 
     public function profit()

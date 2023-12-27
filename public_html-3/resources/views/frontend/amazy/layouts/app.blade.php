@@ -117,9 +117,9 @@
     <!-- promotion_bar_wrapper::end  -->
 
     <!-- HEADER::START -->
+    
     @include('frontend.amazy.partials._header',[$popupContent,$compares])
     <!--/ HEADER::END -->
-
     @section('content')
      @show
     @include('frontend.amazy.partials._footer')

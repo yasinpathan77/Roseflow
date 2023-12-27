@@ -53,7 +53,7 @@ class SellerController extends Controller
 
     public function __construct(SellerService $sellerService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->sellerService = $sellerService;
     }
 

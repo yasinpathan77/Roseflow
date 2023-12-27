@@ -18,7 +18,7 @@ class FrontendCMSController extends Controller
     protected $loginPageRepository;
     public function __construct(LoginPageRepository $loginPageRepository)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->loginPageRepository = $loginPageRepository;
     }
 

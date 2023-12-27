@@ -17,7 +17,7 @@ class NewUserZoneController extends Controller
     public function __construct(NewUserZoneService $newUserZoneService)
     {
         $this->newUserZoneService = $newUserZoneService;
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
     }
 
     public function show($slug)

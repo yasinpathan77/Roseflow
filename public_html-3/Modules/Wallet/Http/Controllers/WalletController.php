@@ -40,7 +40,7 @@ class WalletController extends Controller
 
     public function __construct(WalletService  $walletService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->walletService = $walletService;
     }
 

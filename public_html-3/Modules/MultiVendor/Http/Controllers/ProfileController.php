@@ -29,7 +29,7 @@ class ProfileController extends Controller
 
     public function __construct(ProfileService $seller, StateService $stateService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->seller = $seller;
         $this->stateService = $stateService;
     }

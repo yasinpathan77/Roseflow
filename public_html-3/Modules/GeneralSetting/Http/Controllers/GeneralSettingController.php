@@ -28,7 +28,7 @@ class GeneralSettingController extends Controller
 
     public function __construct(GeneralSettingService $generalSettingService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->generalSettingService = $generalSettingService;
     }
 

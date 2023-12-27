@@ -17,7 +17,7 @@ class ProductReviewController extends Controller
     public function __construct(ProductReviewService $productReviewService)
     {
         $this->productReviewService = $productReviewService;
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
     }
     public function index(Request $request){
 

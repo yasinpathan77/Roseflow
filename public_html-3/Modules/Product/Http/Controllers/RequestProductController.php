@@ -15,7 +15,7 @@ class RequestProductController extends Controller
 
     public function __construct(ProductService $productService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->productService = $productService;
     }
 

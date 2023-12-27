@@ -16,7 +16,7 @@ class AttributeController extends Controller
 
     public function __construct(AttributeService $attributeService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->attributeService = $attributeService;
     }
 

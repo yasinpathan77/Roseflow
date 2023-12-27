@@ -15,7 +15,7 @@ class AproveProductReviewController extends Controller
     protected $productReviewService;
     public function __construct(ProductReviewService $productReviewService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->productReviewService = $productReviewService;
     }
 

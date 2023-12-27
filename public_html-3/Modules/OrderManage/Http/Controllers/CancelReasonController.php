@@ -14,7 +14,7 @@ class CancelReasonController extends Controller
     protected $cancelReasonService;
 
     public function __construct(CancelReasonService $cancelReasonService){
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->cancelReasonService = $cancelReasonService;
     }
 

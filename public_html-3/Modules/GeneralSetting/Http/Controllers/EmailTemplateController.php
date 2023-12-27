@@ -22,7 +22,7 @@ class EmailTemplateController extends Controller
 
     public function __construct(EmailTemplateService $emailTemplateService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->emailTemplateService = $emailTemplateService;
     }
 

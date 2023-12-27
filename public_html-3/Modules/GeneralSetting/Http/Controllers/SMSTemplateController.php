@@ -16,7 +16,7 @@ class SMSTemplateController extends Controller
     protected $sms_template_service;
     public function __construct(SmsTemplateService $sms_template_service)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->sms_template_service = $sms_template_service;
     }
 

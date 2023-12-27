@@ -14,7 +14,7 @@ class SocialConfigController extends Controller
 {
     protected $socialConfigRepository;
     public function __construct(SocialConfigRepository $socialConfigRepository){
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->socialConfigRepository = $socialConfigRepository;
     }
 

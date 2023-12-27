@@ -20,7 +20,7 @@ class ThemeColorController extends Controller
     public function __construct(ThemeColorService $themeColorService)
     {
         $this->themeColorService = $themeColorService;
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
     }
 
 

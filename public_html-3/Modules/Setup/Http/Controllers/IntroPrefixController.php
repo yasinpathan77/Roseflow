@@ -15,7 +15,7 @@ class IntroPrefixController extends Controller
 
     public function __construct(IntroPrefixService $introPrefixService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->introPrefixService = $introPrefixService;
     }
 

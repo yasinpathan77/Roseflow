@@ -18,7 +18,7 @@ class AboutUsController extends Controller
     {
         $this->benefitService = $benefitService;
         $this->aboutusService = $aboutusService;
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
     }
     public function index()
     {

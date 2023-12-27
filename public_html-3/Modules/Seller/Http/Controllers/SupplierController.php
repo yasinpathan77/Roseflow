@@ -15,7 +15,7 @@ class SupplierController extends Controller
     protected $supplierService;
     public function __construct(SupplierService $supplierService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->supplierService = $supplierService;
     }
 

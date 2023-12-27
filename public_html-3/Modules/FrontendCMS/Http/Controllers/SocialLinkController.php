@@ -19,7 +19,7 @@ class SocialLinkController extends Controller
 
     public function __construct(SocialLinkResitory $seller)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->seller = $seller;
     }
 

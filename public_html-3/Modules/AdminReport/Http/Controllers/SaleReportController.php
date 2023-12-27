@@ -19,7 +19,7 @@ class SaleReportController extends Controller
     public function __construct(SaleReportService $saleReportService)
     {
         $this->saleReportService = $saleReportService;
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
     }
 
 

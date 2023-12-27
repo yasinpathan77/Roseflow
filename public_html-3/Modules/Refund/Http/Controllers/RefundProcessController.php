@@ -15,7 +15,7 @@ class RefundProcessController extends Controller
     protected $refundProcessService;
 
     public function __construct(RefundProcessService $refundProcessService){
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->refundProcessService = $refundProcessService;
     }
 

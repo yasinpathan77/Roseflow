@@ -16,7 +16,7 @@ class WidgetController extends Controller
     protected $widgetService;
     public function __construct(WidgetService $widgetService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->widgetService = $widgetService;
     }
 

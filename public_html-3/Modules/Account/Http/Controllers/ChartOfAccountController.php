@@ -32,7 +32,7 @@ class ChartOfAccountController extends Controller
     {
         $this->chartOfAccountService = $chartOfAccountService;
         $this->request = $request;
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->middleware('prohibited_demo_mode')->only('store', 'update', 'destroy');
     }
 

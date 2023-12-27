@@ -17,7 +17,7 @@ class UnitTypeController extends Controller
 
     public function __construct(UnitTypeService $unitTypeService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->unitTypeService = $unitTypeService;
     }
 

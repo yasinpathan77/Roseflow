@@ -23,7 +23,7 @@ class MenuController extends Controller
 
     public function __construct(MenuService $menuService)
     {
-        $this->middleware('maintenance_mode');
+        // $this->middleware('maintenance_mode');
         $this->menuService = $menuService;
     }
 
